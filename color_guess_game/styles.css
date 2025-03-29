@@ -1,0 +1,51 @@
+body{
+    margin: auto;
+    background-color: dimgray;
+    border: 1px solid black;
+    width: 1000px;
+    height: 500px;
+}
+
+h1{
+    text-align: center;
+}
+
+.color-block {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+
+}
+
+#restart{
+    width: 90px;
+    height: 20px;
+}
+
+#cB1{
+    background-color: rgb(255, 0, 0);
+}
+
+#cB2{
+    background-color:rgb(255, 255, 0);
+}
+
+#cB3{
+    background-color:rgb(0, 255, 0);
+}
+
+#cB4{
+    background-color:rgb(0, 255, 255);
+}
+
+#cB5{
+    background-color:rgb(0, 0, 255);
+}
+
+#cB6{
+    background-color:rgb(255, 0, 255);
+}

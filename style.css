@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'modern_typewriter';
+    src: url('fonts/modern_typewriter/MODERN TYPEWRITER.ttf')
+}
+
+* {
+    background-color: white;
+    font-family: 'modern_typewriter';
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+body {
+    background: #000;
+    margin: auto;
+    width: 98vw;
+    overflow: hidden;
+
+}
+
+.main-container {
+    background: lightblue;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+    'header header header header header'
+        'nav main main main main'
+    'nav main main main main'
+    'nav main main main main'
+    'nav main main main main'
+'nav main main main main'
+'nav main main main main'
+'footer main main main main';
+    gap: 1rem;
+    height: 100vh;
+
+}
+
+
+header {
+    grid-area: header;
+    background: white;
+    display: flex;
+    justify-content: space-evenly
+}
+
+header > div {
+    height: 200px;
+    overflow: hidden;
+
+}
+
+header > div > img {
+    height: 100%;
+    width: auto;
+    margin-bottom: -10px;
+}
+
+.linkedin {
+    align-self: end;
+}
+
+.github {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.certificates {
+    transition: transform 0.3s ease-in-out;
+
+    img:hover {
+        transform: scale(2);
+        onmouseover: "showInIframe(this.src)"
+
+    }
+}
+
+main {
+    background-color: white;
+    grid-area: main;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    overflow-y: auto;
+
+}
+
+#intro-text>* {
+    background-color: white;
+    font-family: "DejaVu Math TeX Gyre", cursive;
+}
+
+main > p {
+    margin: 20px 80px 0 80px;
+}
+
+#content-frame {
+    width: 100%;
+    height: 100%;
+}
+
+
+nav {
+    grid-area: nav;
+    background: #B9B9B9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+nav > a {
+    background: #B9B9B9;
+    color: black;
+    font-family: 'modern_typewriter', sans-serif;
+    font-weight: lighter;
+}
+
+footer {
+    grid-area: footer;
+    background: #B9B9B9;
+}

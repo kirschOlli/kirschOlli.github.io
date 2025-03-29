@@ -1,0 +1,8 @@
+[submodule "amazing_prices"]
+    path = amazing_prices
+	url = https://github.com/kirschOlli/amazing_prices.git
+
+[submodule "case_converter"]
+    path = case_converter
+    url = https://github.com/kirschOlli/case_converter.git
+
