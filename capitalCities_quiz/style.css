@@ -26,7 +26,7 @@ h1 {
     width: 50vw;
 }
 
-.card{
+.card {
     display: flex;
     align-self: auto;
     justify-self: center;
@@ -35,8 +35,7 @@ h1 {
 }
 
 
-
-.question{
+.question {
     backface-visibility: inherit;
     background-color: lightseagreen;
     text-align: center;
@@ -46,7 +45,7 @@ h1 {
     z-index: 2;
 }
 
-.answer{
+.answer {
     text-align: center;
     backface-visibility: inherit;
     align-content: center;
@@ -59,13 +58,25 @@ h1 {
     transform: rotateY(180deg);
 }
 
-.card:hover{
+.card:hover {
     transform-style: preserve-3d;
     transform: rotateY(180deg);
 }
 
 
+@media screen and (max-width: 430px) {
 
-
-
+    body {
+        width: 90vw;
+        height: auto;
+    }
+    .quiz-main {
+        width: 90%;
+        height: auto;
+    }
+    .question, .answer {
+        width: 5em;
+        height: 5em;
+    } {}
+}
 

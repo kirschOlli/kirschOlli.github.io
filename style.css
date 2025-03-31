@@ -94,7 +94,7 @@ main {
 
 }
 
-#intro-text>* {
+#intro-text > * {
     background-color: white;
     font-family: "DejaVu Math TeX Gyre", cursive;
 }
@@ -128,4 +128,54 @@ nav > a {
 footer {
     grid-area: footer;
     background: #B9B9B9;
+}
+
+/* Responsive Anpassungen für gängige Smartphone-Breite */
+@media (max-width: 430px) {
+    header > div > img {
+        display: none;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header>div{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        font-size: 9px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        position: sticky;
+        bottom: 0;
+        background: #B9B9B9;
+        padding: 5px 0;
+    }
+
+    nav a {
+        flex: 0 0 auto;
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    main {
+        width: 100%;
+        height: 800px;
+    }
+
+    #content-frame {
+        display: block;
+        margin: 0 auto; /* Zentriert den iframe */
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 }
