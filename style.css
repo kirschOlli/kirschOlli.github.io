@@ -96,7 +96,7 @@ main {
 
 #intro-text > * {
     background-color: white;
-    font-family: "DejaVu Math TeX Gyre", cursive;
+    font-family: "DejaVu Math TeX Gyre";
 }
 
 
@@ -132,7 +132,7 @@ footer {
 }
 
 /* Responsive Anpassungen für gängige Smartphone-Breite */
-@media (max-width: 430px) {
+@media (max-width: 500px) {
     header > div > img {
         display: none;
     }
